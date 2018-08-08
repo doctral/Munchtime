@@ -6,10 +6,13 @@ import { DeliverypartnerComponent } from './footer/deliverypartner/deliverypartn
 import { RestaurantpartnerComponent } from './footer/restaurantpartner/restaurantpartner.component';
 import { TermsComponent } from './footer/terms/terms.component';
 import { PrivacyComponent } from './footer/privacy/privacy.component';
+import { CoreModule } from '../core/core.module';
+import { ShoppingCartComponent } from './header/shopping-cart/shopping-cart.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    CoreModule
   ],
   declarations: [
     HeaderComponent,
@@ -17,6 +20,12 @@ import { PrivacyComponent } from './footer/privacy/privacy.component';
     DeliverypartnerComponent,
     RestaurantpartnerComponent,
     TermsComponent,
-    PrivacyComponent]
+    PrivacyComponent,
+    ShoppingCartComponent
+  ],
+  exports: [
+    HeaderComponent,
+    FooterComponent
+  ]
 })
 export class SharedModule { }

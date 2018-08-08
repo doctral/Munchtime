@@ -11,10 +11,12 @@ import { RestaurantCheckoutComponent } from './components/restaurants/restaurant
 import { FoodItemComponent } from './components/restaurants/restaurant-details/restaurant-menu/food-item/food-item.component';
 import { FoodDetailsComponent } from './components/restaurants/restaurant-details/restaurant-menu/food-details/food-details.component';
 
+import { ShoppingCartService } from './service/shopping-cart/shopping-cart.service';
 
 @NgModule({
   imports: [
-    CommonModule
+
+  CommonModule
 
   ],
   declarations: [
@@ -26,6 +28,12 @@ import { FoodDetailsComponent } from './components/restaurants/restaurant-detail
     RestaurantCheckoutComponent,
     FoodItemComponent,
     FoodDetailsComponent
+  ],
+  exports: [
+    AuthenticateComponent
+  ],
+  providers: [
+    ShoppingCartService
   ]
 })
 export class CoreModule { }

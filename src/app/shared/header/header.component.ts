@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticateComponent } from '../../core/components/authenticate/authenticate.component';
 
 @Component({
   selector: 'app-header',

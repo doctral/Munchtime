@@ -1,38 +1,46 @@
-
-  <div class="row"  >
-    <div class="col-lg-2">
-      <img src="" alt=""><p>add image</p>
-    </div>
-    <div class="col-lg-5">
-      <div class="row">
-        <div class="col-lg-4">
-            <select>
-                <option>ASAP</option>
-                <option>Select A Delievey Time</option>
-              </select>
-        </div>
-        <div class="col-lg-1">
-          TO
-        </div>
-        <div class="col-lg-6">
-            <input class = "addressInput" type="text" value="Enter your address">
-        </div>
-      </div>
-
-    </div>
-    <div class="col-lg-1">
+<div class="row">
+  <!-- <div class="col-lg-2">
+    <img src="" alt="">
+  </div>
+  <div class="col-lg-5">
+    <div class="row">
+      <div class="col-lg-4">
         <select>
-          <option>English</option>
-          <option>Spanish</option>
-          <option>Chinese</option>
+          <option>ASAP</option>
+          <option>Select A Delievey Time</option>
         </select>
-    </div>
-    <div  class="col-lg-3">
-      <app-authenticate></app-authenticate>
-    </div>
+      </div>
       <div class="col-lg-1">
-      <app-shopping-cart></app-shopping-cart>
+        TO
+      </div>
+      <div class="col-lg-6">
+        <input class="addressInput" type="text" value="Enter your address">
+      </div>
     </div>
+
+  </div>
+  <div class="col-lg-1">
+    <select>
+      <option>English</option>
+      <option>Spanish</option>
+      <option>Chinese</option>
+    </select>
+  </div>
+  <div class="col-lg-3">
+    <app-authenticate></app-authenticate>
+  </div> -->
+  <div class="header" background-image="{{ item.featured_image }}">
+    <!--some content-->
+  </div>
+
+  <!-- alternative -->
+  <div class="header" [ngStyle]="{'background-image': 'url(' + item.featured_image + ')'}">
+    <!--some content-->
+  </div>
+
+  <div class="col-lg-1">
+    <app-shopping-cart></app-shopping-cart>
+  </div>
 
 
 </div>

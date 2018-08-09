@@ -47,6 +47,7 @@ import { PrivacyComponent } from "./footer/privacy/privacy.component";
 import { CoreModule } from "../core/core.module";
 import { ShoppingCartComponent } from "./header/shopping-cart/shopping-cart.component";
 import { SearchRestaurantComponent } from "./search-restaurant/search-restaurant.component";
+import { BackgroundImage } from './header/background-image';
 
 @NgModule({
   imports: [
@@ -96,7 +97,8 @@ import { SearchRestaurantComponent } from "./search-restaurant/search-restaurant
     TermsComponent,
     PrivacyComponent,
     ShoppingCartComponent,
-    SearchRestaurantComponent
+    SearchRestaurantComponent,
+    BackgroundImage
   ],
   exports: [HeaderComponent, FooterComponent, SearchRestaurantComponent]
 })

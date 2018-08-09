@@ -8,6 +8,7 @@ import { TermsComponent } from './footer/terms/terms.component';
 import { PrivacyComponent } from './footer/privacy/privacy.component';
 import { CoreModule } from '../core/core.module';
 import { ShoppingCartComponent } from './header/shopping-cart/shopping-cart.component';
+import { SearchRestaurantComponent } from './search-restaurant/search-restaurant.component';
 
 @NgModule({
   imports: [
@@ -21,11 +22,13 @@ import { ShoppingCartComponent } from './header/shopping-cart/shopping-cart.comp
     RestaurantpartnerComponent,
     TermsComponent,
     PrivacyComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    SearchRestaurantComponent
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SearchRestaurantComponent
   ]
 })
 export class SharedModule { }

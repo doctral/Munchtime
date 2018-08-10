@@ -1,5 +1,8 @@
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { SlideshowModule } from 'ng-simple-slideshow';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -36,18 +39,17 @@ import {
   MatToolbarModule,
   MatTooltipModule,
   MatTreeModule
-} from "@angular/material";
+} from '@angular/material';
 
-import { HeaderComponent } from "./header/header.component";
-import { FooterComponent } from "./footer/footer.component";
-import { DeliverypartnerComponent } from "./footer/deliverypartner/deliverypartner.component";
-import { RestaurantpartnerComponent } from "./footer/restaurantpartner/restaurantpartner.component";
-import { TermsComponent } from "./footer/terms/terms.component";
-import { PrivacyComponent } from "./footer/privacy/privacy.component";
-import { CoreModule } from "../core/core.module";
-import { ShoppingCartComponent } from "./header/shopping-cart/shopping-cart.component";
-import { SearchRestaurantComponent } from "./search-restaurant/search-restaurant.component";
-import { BackgroundImage } from './header/background-image';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { DeliverypartnerComponent } from './footer/deliverypartner/deliverypartner.component';
+import { RestaurantpartnerComponent } from './footer/restaurantpartner/restaurantpartner.component';
+import { TermsComponent } from './footer/terms/terms.component';
+import { PrivacyComponent } from './footer/privacy/privacy.component';
+import { CoreModule } from '../core/core.module';
+import { ShoppingCartComponent } from './header/shopping-cart/shopping-cart.component';
+import { SearchRestaurantComponent } from './search-restaurant/search-restaurant.component';
 
 @NgModule({
   imports: [
@@ -87,7 +89,9 @@ import { BackgroundImage } from './header/background-image';
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatTreeModule
+    MatTreeModule,
+    SlideshowModule,
+    NgbModule
   ],
   declarations: [
     HeaderComponent,
@@ -97,8 +101,7 @@ import { BackgroundImage } from './header/background-image';
     TermsComponent,
     PrivacyComponent,
     ShoppingCartComponent,
-    SearchRestaurantComponent,
-    BackgroundImage
+    SearchRestaurantComponent
   ],
   exports: [HeaderComponent, FooterComponent, SearchRestaurantComponent]
 })

@@ -4,5 +4,117 @@
 @import '~bootstrap/scss/bootstrap-reboot';
 @import '~bootstrap/scss/bootstrap-grid';
 
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Hanalei+Fill|Josefin+Sans');
+
+$break-small: 600px;
+$break-large: 960px;
+$break-large-min: 961px;
+$grid-breakpoints: ( sm: 320px, md: 600px, lg: 960px) !default;
+$container-max-widths: ( sm: 320px, md: 600px, lg: 960px) !default;
+
 html, body { height: 100%; }
-body { margin: 0; font-family: 'Roboto', sans-serif; }
+body { margin: 0; font-family: 'Josefin Sans', sans-serif; }
+
+//override break size
+@media (max-width: $break-small) {
+  @for $i from 1 through 12 {
+      .col-sm-#{$i} {
+          -ms-flex: 0 0 ($i * 100%/12);
+          flex: 0 0 ($i * 100%/12);
+          max-width: ($i * 100%/12);
+      }
+  }
+  .d-sm-block {
+      display: block !important;
+  }
+  .d-sm-none {
+      display: none !important;
+  }
+  .d-sm-flex {
+      display: flex !important;
+  }
+}
+
+@media (min-width: $break-small) and (max-width: $break-large) {
+  @for $i from 1 through 12 {
+      .col-md-#{$i} {
+          -ms-flex: 0 0 ($i * 100%/12);
+          flex: 0 0 ($i * 100%/12);
+          max-width: ($i * 100%/12);
+      }
+  }
+  .d-md-block {
+      display: block !important;
+  }
+  .d-md-none {
+      display: none !important;
+  }
+  .d-md-flex {
+      display: flex !important;
+  }
+}
+
+@media (min-width: $break-large-min) {
+  @for $i from 1 through 12 {
+      .col-lg-#{$i} {
+          -ms-flex: 0 0 ($i * 100%/12);
+          flex: 0 0 ($i * 100%/12);
+          max-width: ($i * 100%/12);
+      }
+  }
+  .d-lg-block {
+      display: block !important;
+  }
+  .d-lg-none {
+      display: none !important;
+  }
+  .d-lg-flex {
+      display: flex !important;
+  }
+}
+
+/* Base Font Sizes */
+
+html {
+  font-size: 11px;
+ // padding-top: calc(30px + 1.25rem);
+  background-color: FloralWhite;
+  @media screen and (max-width: $break-small) {
+      font-size: 10px;
+  }
+  @media screen and (min-width: $break-large-min) {
+      font-size: 12px;
+  }
+}
+
+body{
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: none;
+}
+
+/* MunchTime Specific Color Platte */
+//white
+$FloralWhite: #fffaf0;
+$bisque: 	#FFE4C4;
+$whitesSmoke: #F5F5F5;
+//blue:
+
+//orange
+$coral : 	#ff7f50;
+$chocolate: #D2691E;

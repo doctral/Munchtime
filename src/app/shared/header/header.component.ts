@@ -1,43 +1,36 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
+import { Component, OnInit } from "@angular/core";
+import { NgbCarouselConfig } from "@ng-bootstrap/ng-bootstrap";
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  selector: "app-header",
+  templateUrl: "./header.component.html",
+  styleUrls: ["./header.component.scss"]
 })
-
 export class HeaderComponent implements OnInit {
-
-  imageSources: string[] = [];
   images: Array<string>;
 
-  constructor(
-  ) {
-    this.setImageSources();
+  constructor(slideConfig: NgbCarouselConfig) {
+    slideConfig.interval = 4000;
+    slideConfig.wrap = true;
+    slideConfig.pauseOnHover = false;
+    slideConfig.showNavigationArrows = false;
+    slideConfig.showNavigationIndicators = false;
   }
 
   ngOnInit() {
     this.images = this._imageUrls();
-    console.log(this._imageUrls());
-  }
-
-  private setImageSources() {
-    for (let i = 1; i < 6; i++) {
-      this.imageSources.push('../../assets/restaurant/background' + i + '.jpg');
-    }
-
   }
 
   private _imageUrls(): Array<string> {
-    const images = ['background1.jpg', 'background2.jpg', 'background3.jpg', 'background4.jpg', 'background5.jpg'];
-    return ['background1.jpg', 'background2.jpg', 'background3.jpg', 'background4.jpg', 'background5.jpg'].map(
-      (ele) => {
-        const randomImage = ele;
-        //console.log(Math.floor(Math.random() * images.length));
-        return '../../assets/restaurant/' + randomImage;
-      }
-    );
+    const images = [
+      "background1.jpg",
+      "background2.jpg",
+      "background3.jpg",
+      "background4.jpg",
+      "background5.jpg"
+    ];
+    return images.map(ele => {
+      const randomImage = ele;
+      return "../../assets/restaurant/" + randomImage;
+    });
   }
-
 }

@@ -11,7 +11,7 @@
 
 h1 {
   font-family: 'Hanalei Fill', cursive;
-  font-size: 16em;
+  font-size: 12em;
   color: bisque;
   opacity: 0.7;
 }
@@ -27,6 +27,11 @@ nav .navbar-nav .nav-link,
 nav .navbar-brand {
    font-family:'Josefin Sans', sans-serif;
    font-size: 1.8em;
+   color: #FFFFFF;
+}
+
+nav {
+  background-color: $bloody;
 }
 
 

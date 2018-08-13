@@ -4,7 +4,7 @@
 @import '~bootstrap/scss/bootstrap-reboot';
 @import '~bootstrap/scss/bootstrap-grid';
 
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Hanalei+Fill|Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Hanalei+Fill|Josefin+Sans|Abril+Fatface');
 
 $break-small: 600px;
 $break-large: 960px;
@@ -12,8 +12,8 @@ $break-large-min: 961px;
 $grid-breakpoints: ( sm: 320px, md: 600px, lg: 960px) !default;
 $container-max-widths: ( sm: 320px, md: 600px, lg: 960px) !default;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Josefin Sans', sans-serif; }
+// html, body { }
+body { margin:0; font-family: 'Josefin Sans', sans-serif}
 
 //override break size
 @media (max-width: $break-small) {
@@ -78,7 +78,7 @@ body { margin: 0; font-family: 'Josefin Sans', sans-serif; }
 html {
   font-size: 11px;
  // padding-top: calc(30px + 1.25rem);
-  background-color: FloralWhite;
+  
   @media screen and (max-width: $break-small) {
       font-size: 10px;
   }
@@ -118,3 +118,4 @@ $whitesSmoke: #F5F5F5;
 //orange
 $coral : 	#ff7f50;
 $chocolate: #D2691E;
+$bloody: #A52A2A;

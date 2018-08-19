@@ -1,6 +1,7 @@
 export interface IRestaurant {
-    title: string;
-    imageSrc: string;
-    delieverTimespan: string;
-    rating: number;
+    name: string;
+    closed: boolean;
+    star: number;
+    address: string;
+    discription: string;
 }

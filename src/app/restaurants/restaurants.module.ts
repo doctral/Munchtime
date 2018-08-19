@@ -9,6 +9,7 @@ import { RestaurantMenuComponent } from './restaurant-details/restaurant-menu/re
 import { RestaurantCheckoutComponent } from './restaurant-details/restaurant-checkout/restaurant-checkout.component';
 import { FoodItemComponent } from './restaurant-details/restaurant-menu/food-item/food-item.component';
 import { FoodDetailsComponent } from './restaurant-details/restaurant-menu/food-details/food-details.component';
+import { RestaurantService } from './restaurant-service/restaurant.service';
 
 
 @NgModule({
@@ -26,6 +27,9 @@ import { FoodDetailsComponent } from './restaurant-details/restaurant-menu/food-
   ],
   exports: [
     RestaurantsComponent
+  ],
+  providers: [
+    RestaurantService
   ]
 })
 export class RestaurantsModule { }

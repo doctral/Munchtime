@@ -1,0 +1,65 @@
+[
+    {
+        "name":"Panda-Express",
+        "closed": false,
+        "address":"942 Market St, Philadelphia, PA 19107",
+        "stars":4.2,
+        "discription":"Panda Express is a fast casual restaurant chain which serves American Chinese cuisine. With approximately 2,000+ locations, it is the largest Asian segment restaurant chain in the United States, where it was founded and is mainly located."
+    },
+    {
+        "name":"Panera",
+        "closed": false,
+        "address":"2311 Concord Pike, Wilmington, DE 19803",
+        "stars":3.8,
+        "discription":"Panera Bread Company is a chain store of bakery-café fast casual restaurants in the United States and Canada."
+    },
+    {
+        "name":"PF-Chang's",
+        "closed": false,
+        "address":"983 Baltimore Pike, Glen Mills, PA 19342",
+        "stars":4.7,        
+        "discription":"P. F. Chang's China Bistro is an Asian-themed US casual dining restaurant chain founded in 1993 by Paul Fleming and Philip Chiang, owned and operated by Centerbridge Partners, and headquartered in Scottsdale, Arizona. "
+    },
+    {
+        "name":"Pizza-Hut",
+        "closed": false,
+        "address":"659 Conchester Hwy, Boothwyn, PA 19061",
+        "stars":3.6,
+        "discription":"Pizza Hut is an American restaurant chain and international franchise founded in 1958 by Dan and Frank Carney. The company is known for its Italian-American cuisine menu including pizza and pasta, as well as side dishes and desserts."
+    },
+    {
+        "name":"Popeyes",
+        "closed": false,
+        "address":"4772 Pennell Rd, Aston, PA 19014",
+        "stars":4.3,
+        "discription":"Popeyes is an American multinational chain of fried chicken fast food restaurants founded in 1972 in New Orleans, Louisiana."
+    },
+    {
+        "name":"Shack-Shack",
+        "closed": false,
+        "address":"2120 Fashion Center Blvd, Christiana, DE 19702",
+        "stars":4.2,        
+        "discription":"Shake Shack is an American fast food restaurant chain based in New York City. It started out as a hot dog cart inside Madison Square Park in 2001, and its popularity steadily grew."
+    },
+    {
+        "name":"Subway",
+        "closed": false,
+        "address":"The Reserve at Darley Green, 2, 3541 Philadelphia Pike Unit 2A, Claymont, DE 19703",
+        "stars":4.7,
+        "discription":"Subway is an American privately held fast food restaurant franchise that primarily sells submarine sandwiches and salads."
+    },
+    {
+        "name":"Taco-Bell",
+        "closed": false,
+        "address":"659 Conchester Hwy, Boothwyn, PA 19061",
+        "stars":4.2,
+        "discription":"Taco Bell is an American chain of fast food restaurants based out of Irvine, California and a subsidiary of Yum! Brands, Inc."
+    },
+    {
+        "name":"Wendy's",
+        "closed": false,
+        "address":"3100 Chichester Ave, Boothwyn, PA 19061",
+        "stars":4.6,
+        "discription":"Wendy's is an American international fast food restaurant chain founded by Dave Thomas on November 15, 1969, in Columbus, Ohio. The company moved its headquarters to Dublin, Ohio, on January 29, 2006."
+    }
+]

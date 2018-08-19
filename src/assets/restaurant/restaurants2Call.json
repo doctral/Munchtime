@@ -1,0 +1,16 @@
+[
+    {
+        "name":"McDonalds",
+        "closed": false,
+        "address":"2702 Philadelphia Pike, Claymont, DE 19703",
+        "stars":4.8,
+        "discription":"McDonald's is an American fast food company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States. They rechristened their business as a hamburger stand."
+    },
+    {
+        "name":"KFC",
+        "closed": false,
+        "address":"609 Naamans Rd, Claymont, DE 19703",
+        "stars":3.4,
+        "discription":"KFC, also known as Kentucky Fried Chicken, is an American fast food restaurant chain that specializes in fried chicken."
+    }
+]

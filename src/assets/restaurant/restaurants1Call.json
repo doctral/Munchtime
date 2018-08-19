@@ -1,0 +1,65 @@
+[
+    {
+        "name":"Arby's",
+        "closed": false,
+        "address":"2400 Market St, Linwood, PA 19061",
+        "stars":4,
+        "discription":"Arby's is an American quick-service fast-food sandwich restaurant chain with more than 3,300 restaurants system wide and third in terms of revenue. "
+    },
+    {
+        "name":"Buffalo-Wild-Wings",
+        "closed": false,
+        "address":"920 Baltimore Pike, Glen Mills, PA 19342",
+        "stars":4,        
+        "discription":"A Buffalo wing, in the cuisine of the United States, is an unbreaded chicken wing section that is generally deep-fried then coated in a sauce consisting of a vinegar-based cayenne pepper hot sauce and melted butter prior to serving." 
+    },
+    {
+        "name":"Buger-King",
+        "closed": false,
+        "address":"2911 Philadelphia Pike, Claymont, DE 19703",
+        "stars":3.5,        
+        "discription":"Burger King is an American global chain of hamburger fast food restaurants. "
+    },
+    {
+        "name":"Cheesecake-Factory",
+        "closed": false,
+        "address":"350 Christiana Mall, Newark, DE 19702",
+        "stars":4.6,
+        "discription":"The Cheesecake Factory, Inc. is a restaurant company and distributor of cheesecakes based in the United States."
+    },
+    {
+        "name":"Chick-Fli-A",
+        "closed": false,
+        "address":"4737 Concord Pike Ste 760, Wilmington, DE 19803",
+        "stars":3.5,
+        "discription":"Chick-fil-A is an American fast food restaurant chain headquartered in the city of College Park, Georgia, specializing in chicken sandwiches. "
+    },
+    {
+        "name":"Chilis",
+        "closed": false,
+        "address":"3220 Fashion Center Blvd, Newark, DE 19702",
+        "stars":2.5,
+        "discription":"Chili's Grill & Bar is an American casual dining restaurant chain that features Tex-Mex-style cuisine. "
+    },
+    {
+        "name":"Chipotle",
+        "closed": false,
+        "address":"1751 Wilmington Pike, Glen Mills, PA 19342",
+        "stars":5,
+        "discription":"Chipotle Mexican Grill, Inc. is an American chain of fast casual restaurants in the United States, United Kingdom, Canada, Germany, and France, specializing in tacos and Mission-style burritos."
+    },
+    {
+        "name":"Crispers",
+        "closed": false,
+        "address":"2601 Carpenter Station Rd #50, Wilmington, DE 19810",
+        "stars":3.6,
+        "discription":"Crispers is a Lakeland, Florida based chain of fast casual restaurants with an emphasis on health-conscious fare and a menu that consists mainly of salads and sandwiches."
+    },
+    {
+        "name":"Five-Guys",
+        "closed": false,
+        "address":"2217 Concord Pike, Wilmington, DE 19803",
+        "stars":4.2,
+        "discription":"Five Guys Enterprises LLC is an American fast casual restaurant chain focused on hamburgers, hot dogs, and French fries, and headquartered in Lorton, Virginia, an unincorporated part of Fairfax County."
+    }
+]

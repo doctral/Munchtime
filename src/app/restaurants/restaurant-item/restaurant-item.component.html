@@ -1,8 +1,6 @@
-<div class="col-md-4" style="margin: 5px auto;" >
-  <a (click)="chooseTheRestaurant()">
+<a (click)="chooseTheRestaurant()">
   <div class="thumbnail">
-    <img src="../../../assets/restaurant/sample.jpg" alt="">
+    <img [src] = "imageSrc" alt="">
     <div class="caption">Hello World</div>
   </div>
- </a>
-</div>
+</a>

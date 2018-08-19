@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { IRestaurant } from '../model/IRestaurant';
 @Component({
   selector: 'app-restaurant-item',
   templateUrl: './restaurant-item.component.html',
@@ -7,9 +8,15 @@ import { Router } from '@angular/router';
 })
 export class RestaurantItemComponent implements OnInit {
 
-  constructor(private router: Router) { }
+
+  @Input() restaurant: IRestaurant;
+  imageSrc: string;
+
+  constructor(private router: Router) {}
 
   ngOnInit() {
+    console.log(this.restaurant);
+    this.imageSrc = '../../../assets/restaurant/restaurant-item/restaurantImageSource/' + this.restaurant.name + '.jpg';
   }
 
   chooseTheRestaurant() {

@@ -1,14 +1,15 @@
+<h1 style="text-align: center">
+
+  Restaurants</h1>
 
 
-<h1 style="text-align: center">Restaurants</h1>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" style="margin: 5px auto;" *ngFor="let restaurant of restaurants">
+      <app-restaurant-item [restaurant]=restaurant></app-restaurant-item>
+    </div>
+  </div>
+  <a *ngIf="showLoadMore" (click)="loadMore()">load more</a>
 
-
-  <div class="container">
-    <div class="row">
-      <app-restaurant-item></app-restaurant-item>
-    </div> 
-<a *ngIf="showLoadMore" (click)="loadMore()">load more</a>
- 
 </div>
-

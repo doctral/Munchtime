@@ -20,8 +20,8 @@ export class RestaurantItemComponent implements OnInit {
   }
 
   chooseTheRestaurant() {
-    console.log('click on the restaurant');
-    // this.router.navigate();
+    console.log('restaurant/' + this.restaurant.name);
+    this.router.navigate(['restaurant/' + this.restaurant.name]);
   }
 
 }

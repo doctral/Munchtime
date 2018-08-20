@@ -4,26 +4,18 @@ import { RestaurantsComponent } from './restaurants.component';
 
 
 import { RestaurantItemComponent } from './restaurant-item/restaurant-item.component';
-import { RestaurantDetailsComponent } from './restaurant-details/restaurant-details.component';
-import { RestaurantMenuComponent } from './restaurant-details/restaurant-menu/restaurant-menu.component';
-import { RestaurantCheckoutComponent } from './restaurant-details/restaurant-checkout/restaurant-checkout.component';
-import { FoodItemComponent } from './restaurant-details/restaurant-menu/food-item/food-item.component';
-import { FoodDetailsComponent } from './restaurant-details/restaurant-menu/food-details/food-details.component';
 import { RestaurantService } from './restaurant-service/restaurant.service';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   declarations: [
     RestaurantsComponent,
-    RestaurantItemComponent,
-    RestaurantDetailsComponent,
-    RestaurantMenuComponent,
-    RestaurantCheckoutComponent,
-    FoodItemComponent,
-    FoodDetailsComponent
+    RestaurantItemComponent
   ],
   exports: [
     RestaurantsComponent

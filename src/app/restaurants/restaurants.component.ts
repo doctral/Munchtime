@@ -12,13 +12,14 @@ export class RestaurantsComponent implements OnInit {
   index = 0;
   showLoadMore = true;
 
-  constructor(private restaurantService: RestaurantService) { }
+  constructor(
+    private restaurantService: RestaurantService
+  ) { }
 
   ngOnInit() {
     this.getRestaurants().subscribe(
       data => {
         this.restaurants = data;
-        console.log(this.restaurants);
       }
     );
   }
@@ -31,10 +32,14 @@ export class RestaurantsComponent implements OnInit {
           this.showLoadMore = false;
         }
         this.restaurants = this.restaurants.concat(data);
-        console.log(this.restaurants);
       }
     );
   }
+
+  // chooseRestaurant(event) {
+  //  // this.router.navigate('restaurant/'+ event.target.attributes['restaurant'].value.name);
+  //   console.log(event.target.attributes['restaurant'].value.name);
+  // }
 
   private getRestaurants() {
     return this.restaurantService.getRestaurants(this.index);

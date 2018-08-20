@@ -11,6 +11,7 @@ import { MatNativeDateModule } from '@angular/material';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RestaurantDetailModule } from './restaurant-detail/restaurant-detail.module';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SharedModule,
     AppRoutingModule,
     RestaurantsModule,
+    RestaurantDetailModule,
     FormsModule,
     MatNativeDateModule,
     ReactiveFormsModule,
